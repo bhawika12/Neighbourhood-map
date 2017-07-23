@@ -1,0 +1,49 @@
+html,body {
+      height:665px;
+      margin: 0;
+      padding: 0;
+      border: 2px solid black;
+      border-radius: 2px;
+      background-color:#FFF8DC;
+     }
+.body {
+  height:30%;
+  background-color:#FFF8DC;
+}
+.kerela
+{
+  background-color:#DC143C;
+}
+.title
+{
+  height:50px;
+  width:50px;
+}
+.list
+{
+  position:absolute;
+  top:170px;
+  right:100px;
+}
+.info
+{
+  position:absolute;
+  top:120px;  
+}
+#map
+{
+    bottom:60px;
+    position:absolute;
+    top: 280px;
+    width: 92%;
+    height:50%;
+    border: 3px solid #73AD21;
+    }
+
+li{
+  display: inline;
+
+}
+@media (min-width: 500px) {
+          .info{display:block;}
+      }

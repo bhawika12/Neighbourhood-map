@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Project-8 Neighbourhood Map</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/knockout-3.4.1.js"></script>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   </head>
+   <body>
+      <div class="body">
+        <div class="kerela"><center><strong><h1>KERELA<br>Welcome To God's Own Country.</h1></strong></center><hr></div>
+     <div class="menu">
+                   <div class="list">
+                        <center><select data-bind="options: locationOptions, value:selectedLocation">
+                        </select></center>
+                        
+                        <center><ul data-bind="foreach: locationList">
+                            <li><button class="list-item" data-bind="text: title, click: $parent.openWindow, visible: isVisible"></button></li>
+                        </ul></center></div>                  
+                  </div>
+
+      <div id="map"></div></div>       <div class="info"> <h3>EXPLORE and ENJOY:)</h3></div>
+
+      <script src="js/model.js"></script>
+      <script src="js/mymap.js"></script>
+      <script src="js/myviewmodel.js"></script>
+      <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBh55toWVnhr4CpjNW64-3CUI4ANmNFMk8&callback=initMap" onerror="mapError()"
+         ></script>
+   </body>
+</html>
